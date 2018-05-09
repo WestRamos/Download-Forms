@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Download"
+             x:Class="Download.MainPage">
+
+    <StackLayout Padding="12">
+        <Label Text="Ingresa la url de lo que deseas descargar"/>
+        <Entry Placeholder="http://i.mg.com/2138asd2.jpg" PlaceholderColor="Gray" Text="{Binding Url}" />
+        <Button Text="Descargar" Command="{Binding Download}" />
+    </StackLayout>
+
+</ContentPage>
